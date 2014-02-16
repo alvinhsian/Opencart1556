@@ -1,0 +1,91 @@
+/////////////////////////////////
+///       OpenCart V1.5.x     ///
+///    安裝指南   ///
+///  http://www.opencart.com  ///
+/////////////////////////////////
+
+
+注意：以下步驟適用於全新安裝，如果您要升級現有的購物車請觀看Upgrade.txt文件
+
+
+-------
+INSTALL
+-------
+此安裝指南適用FTP、cPanel 或其他的主機操作介面。
+
+-------------------
+
+- Linux 安裝方式 -
+
+	1. 上傳 "Upload" 文件夾內的所有檔案至你的主機空間根目錄(public_html\)下，或將Upload文件夾整個上傳至你的主機空間根目錄(public_html\)下並將Upload更名為您想要的名稱做為商店根目錄。
+		
+	   例. /public_html or /public_html/store
+
+	2.將"商店根目錄"和"admin目錄"下的config-dist.php檔案名稱修改為config.php
+	   
+	3. 如果您是使用 Linux/Unix 系統，請確定以下檔案和文件夾是可寫入的狀態。
+
+			chmod 0755 or 0777 image/
+			chmod 0755 or 0777 image/cache/
+			chmod 0755 or 0777 cache/
+			chmod 0755 or 0777 download/
+			chmod 0755 or 0777 config.php
+			chmod 0755 or 0777 admin/config.php
+
+			假如 0755 權限無法正常運行，可嘗試修改成 0777 權限
+
+	4. 請確定您已經安裝了MySQL的數據庫，並創建一個用戶(為了安全，請不要和你的root用戶相同)。
+
+	5. 瀏覽您的網站。
+
+	   例. http://您的網址 or http://您的網址/store/
+
+	6. 按照提示安裝完成。
+
+	7. 安裝完成後刪除商店根目錄下的 install 文件夾。
+
+-----------------
+	
+- Windows 安裝方式 -
+
+1. 上傳 "Upload" 文件夾內的所有檔案至你的主機空間根目錄(wwwroot\)下，或將Upload文件夾整個上傳至你的主機空間根目錄(wwwroot\)下並將Upload文件夾更名為您想要的名稱做為商店根目錄。
+	
+   例. /wwwroot or /wwwroot/store
+
+2.將"商店根目錄"和"admin目錄"下的config-dist.php檔案名稱修改為config.php
+
+3. 確定以下檔案和文件夾是可讀(read)寫(write)的狀態。
+
+		image/
+		image/cache/
+		cache/
+		download/
+		config.php
+		admin/config.php
+
+4. 請確定您已經安裝了MySQL的數據庫，並創建一個用戶(為了安全，請不要和你的root用戶相同)。
+
+5. 瀏覽您的網站。
+
+   例. http://您的網址 or http://您的網址/store/
+
+6. 按照提示安裝完成。
+
+7. 安裝完成後刪除商店根目錄下的 install 文件夾。
+
+-----------------
+
+- 本地安裝 -
+
+下面列出一些可幫助您快速建構本地運作環境的程式。
+
+http://www.apachefriends.org/en/xampp.html
+http://www.ampps.com/
+http://www.usbwebserver.net
+
+
+有任何問題請訪問: http://www.opencart.com
+
+中文版本提供: http://www.dnono.com
+
+EOF
